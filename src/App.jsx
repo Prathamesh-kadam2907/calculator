@@ -9,12 +9,13 @@ function App() {
       setCalVal("");
     } else if (buttonText === "=") {
       const result = eval(calVal);
-      setCalVal(result)
+      setCalVal(result);
     } else {
       const newDisplayValue = calVal + buttonText;
       setCalVal(newDisplayValue);
     }
   };
+  // karan
   return (
     <div className={styles.calculator}>
       <Display displayValue={calVal}></Display>
